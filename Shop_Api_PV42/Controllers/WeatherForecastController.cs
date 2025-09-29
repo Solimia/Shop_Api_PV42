@@ -3,12 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Shop_Api_PV42.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class UsersController : ControllerBase
-    {
-        [HttpGet]
-        public IEnumerable<string> Get() => new[] { "a", "b" };
-    }
+    [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
